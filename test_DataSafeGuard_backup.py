@@ -32,6 +32,7 @@ class TestDataSafeGuard(TestCase):
 
         self.assertTrue(os.path.exists(os.path.join(destination_dir, "empty directory")))
 
+
     def test_should_copy_directory_with_file(self):
         source_dir = tempfile.mkdtemp()
         folder_path = os.path.join(source_dir, "empty directory")
@@ -95,7 +96,7 @@ class TestDataSafeGuard(TestCase):
         atime_before = time.ctime(os.path.getatime(dest_file_path))
 
         time.sleep(3)
-        # When I run DataSafeGuard().take_backup
+        # When I run  take_backup using data safeguard
         DataSafeGuard().take_backup(source_dir, destination_dir)
 
         dest_file_path_after = os.path.join(destination_dir, "file_name.txt")

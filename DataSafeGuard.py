@@ -32,7 +32,11 @@ def safe_guard_ledger(ledger_path, data_safe_guard: DataSafeGuard):
             log.info("Destination Path: %s", destination_path)
             log.info("checking the destination drive is mounted...")
             if is_mounted(destination_path):
-                data_safe_guard.take_backup(source_path, destination_path)
+                try:
+                    data_safe_guard.take_backup(source_path, destination_path)
+                except Exception as e:
+                    log.error("Exception occurred while copying Source Path: %s, to Destination Path: %s.\nException "
+                              "Message: %s", source_path, destination_path, e)
             else:
                 log.error("Destination Drive is not mounted: %s", destination_path)
 
