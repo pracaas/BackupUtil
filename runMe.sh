@@ -5,7 +5,7 @@
 LOCK_FILE="/tmp/runMe.lock"
 
 if [ -e "$LOCK_FILE" ]; then
-    echo "Existing process found. Exiting data safe guard process running..."
+    echo "Existing process found. Cannot continue data safe guard process. Please try again later."
     exit 1
 fi
 
