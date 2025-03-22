@@ -1,4 +1,2 @@
 Source,Destination
-/Users/prakashpoudel/Repository/ITF/BackupUtil/Test/source,/Users/prakashpoudel/Repository/ITF/BackupUtil/Test/destination/source
-/Users/prakashpoudel/Repository/ITF/BackupUtil/Test/source/test_folder/,/Users/prakashpoudel/Repository/ITF/BackupUtil/Test/destination/test_folder
-/Users/prakashpoudel/Repository/ITF/BackupUtil/Test/source,/Volumes/Factory/Scripted Backup/test/source
+/tmp/folder,/mounted/folder
