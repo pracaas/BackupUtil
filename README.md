@@ -10,3 +10,12 @@ To Run All Test:
 To update Tags:
 > git tag -a vA.B.C -m "Version A.B.C"   
 > git push --tags
+
+
+Create a data transfer ledger
+> Rename data_transfer_ledger_sample.csv to data_transfer_ledger.csv
+> Add source and destination folder 
+
+Run data safeguard script.
+> ./startDataSafeGuard.sh 
+
